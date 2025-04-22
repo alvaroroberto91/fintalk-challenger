@@ -149,6 +149,15 @@ curl --location 'http://localhost:3000/transactions?limit=2' \
 --header 'Authorization: Bearer YOUR-TOKEN'
 ```
 
+For pagination, use the ```lastEvaluatedKey``` example:
+
+```bash
+"lastEvaluatedKey": {
+  "createdAt": "2025-04-22T22:01:34.473Z",
+  "userId": "user-1"
+}
+```
+
 #### /balance (GET)
 
 ```bash
