@@ -69,7 +69,16 @@ DynamoDB Local will be available at `http://localhost:8000`.
 Run the following AWS CLI command to create the `Transactions` table in DynamoDB Local:
 
 ```bash
-aws dynamodb create-table     --table-name Transactions     --attribute-definitions AttributeName=id,AttributeType=S AttributeName=userId,AttributeType=S     --key-schema AttributeName=id,KeyType=HASH AttributeName=userId,KeyType=RANGE     --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5     --endpoint-url http://localhost:8000
+aws dynamodb create-table \
+  --table-name Transactions \
+  --attribute-definitions \
+    AttributeName=userId,AttributeType=S \
+    AttributeName=createdAt,AttributeType=S \
+  --key-schema \
+    AttributeName=userId,KeyType=HASH \
+    AttributeName=createdAt,KeyType=RANGE \
+  --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5 \
+  --endpoint-url http://localhost:8000
 ```
 
 ### 3. Configure SAM Local Env
