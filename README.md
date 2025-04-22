@@ -46,8 +46,6 @@ After that, buil the project
 yarn build
 ```
 
-This will install all the required dependencies for the project.
-
 ### 2. Configure DynamoDB Local
 
 To run DynamoDB locally, you need to use **Docker**.
