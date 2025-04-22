@@ -115,7 +115,6 @@ sam local start-api --docker-network=sam-network
 ```bash
 curl --location 'http://localhost:3000/login' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLTEiLCJpYXQiOjE3NDUzMzY1ODIsImV4cCI6MTc0NTM0MDE4Mn0.6_L_-KWsQQB94HoUezaB2GO-pag0OBDz19WWCqzrAu8' \
 --data-raw '{
     "email": "user1@example.com",
     "password": "123456"
