@@ -37,7 +37,7 @@ Before running this project locally, make sure you have the following installed:
 ### 1. Install Node.js dependencies
 
 ```bash
-yarn install
+yarn || npm install
 ```
 
 After that, buil the project
